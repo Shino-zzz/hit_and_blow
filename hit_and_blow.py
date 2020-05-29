@@ -196,15 +196,15 @@ while len(A) > 1:
     """
 
     # 入力した3桁の整数を各桁ごとに分けてtry_listというリストにする
-    try_num = int(input('3桁の数字を入力してください:'))
+    try_num = int(input('Please enter a 3-digit number:'))
     try_3rd = try_num // 100
     try_2nd = (try_num % 100) // 10
     try_1st = (try_num % 100) % 10
     try_list = [try_1st, try_2nd, try_3rd]
 
     # 入力したHitの個数、Blowの個数を元にhitとblowとotherの組み合わせをつくる
-    hit_num = int(input('Hitの個数を入力してください:'))
-    blow_num = int(input('Blowの個数を入力してください:'))
+    hit_num = int(input('How many Hits did you get?:'))
+    blow_num = int(input('How many Blows did you get?:'))
     other_num = 3 - (hit_num + blow_num)
 
     # HitとBlowの種類と個数の対応を辞書にしておく
@@ -281,8 +281,10 @@ while len(A) > 1:
     A = A & B
 
     # 表示
-    print('候補は' + str(len(A)) + '個あります')
+    print('The candidate numbers are the following'+ str(len(A)))
     print(A)
 
 else:
-    print('やったね！')
+    print('You did it!')
+
+
