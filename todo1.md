@@ -2,6 +2,4 @@
 Edit README.md  
 
 ## Editing files
-- README.md
-  Give an overview of the project
-
+- README.md: Embed a demo video and give an overview of this project.
